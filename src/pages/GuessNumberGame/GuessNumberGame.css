@@ -1,0 +1,66 @@
+.dashboard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+	background: linear-gradient(135deg, #f45b69, #f6e8ea);
+}
+
+.guess-number-card {
+	color: #0b0405;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 1s ease-in-out;
+}
+
+.guess-input {
+	width: 200px;
+	margin-right: 10px;
+	border: 1px solid #f13030;
+	border-radius: 5px;
+}
+
+.guess-button {
+	color: #f6e8ea;
+	background-color: #f59fa6;
+	border-color: #f45b69;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.guess-button:hover {
+	background-color: #f13030;
+	border-color: #f13030;
+}
+
+.restart-button {
+	margin-left: 10px;
+	color: #f6e8ea;
+	background-color: #5a0001;
+	border-color: #5a0001;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+	color: #f6e8ea;
+	background-color: #f13030;
+	border-color: #f13030;
+}
+
+.history-table {
+	margin-top: 20px;
+	color: #f6e8ea;
+	background: #22181c;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

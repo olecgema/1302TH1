@@ -1,4 +1,7 @@
-﻿export default [
+﻿import component from '@/locales/en-US/component';
+import { icons } from 'antd/lib/image/PreviewGroup';
+
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -35,6 +38,26 @@
 		name: 'RandomUser',
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/todolist',
+		name: 'TodoList',
+		component: './todolist',
+		icon: 'CheckCircleOutlined',
+	},
+	{
+		path: '/StudyProgress',
+		component: './StudyProgress',
+		exact: true,
+		name: 'StudyProgress',
+		icon: 'BookOutlined',
+	},
+	{
+		path: '/GuessNumberGame',
+		component: './GuessNumberGame',
+		exact: true,
+		name: 'GuessNumberGame',
+		icon: 'BulbOutlined',
 	},
 
 	// DANH MUC HE THONG
